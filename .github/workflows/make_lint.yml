@@ -1,0 +1,19 @@
+name: make-lint
+
+on: push
+
+jobs:
+ build:
+  runs-on: ubuntu-latest
+  steps:
+  - uses: actions/checkout@v2
+  - name: install python
+    uses: actions/setup-python@v2
+    with:
+     python-version: '3.7'
+  - name: Install poetry
+    run: |
+     pip install poetry
+  - name: start make lint
+    run: |
+     make lint
