@@ -4,7 +4,7 @@ import random
 
 
 def main():
-    ''''
+    '''
     Запустите игру, и ответьте на все вопросы правильно
     '''
 
@@ -27,10 +27,12 @@ def main():
                 print("Congratulations, {}!".format(name))
         else:
             if n % 2 == 0:
-                print("'{}' is wrong answer ;(. Correct answer was 'yes'.".format(answer))
+                print("'{}' is wrong answer ;(. Correct answer was 'yes'."
+                      .format(answer))
                 print("Let's try again, {}!".format(name))
             else:
-                print("'{}' is wrong answer ;(. Correct answer was 'no'.".format(answer))
+                print("'{}' is wrong answer ;(. Correct answer was 'no'."
+                      .format(answer))
                 print("Let's try again, {}!".format(name))
             break
         # после каждого раунда прибавляем на +1
