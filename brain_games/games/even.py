@@ -16,6 +16,3 @@ def get_logic_game():
         correct_answer = 'no'
 
     return game_logic, correct_answer
-
-
-
