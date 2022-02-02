@@ -5,7 +5,7 @@ GAME_CONDITION = "Find the greatest common divisor of given numbers."
 
 def get_logic_game():
     """
-    Игра - угадай самый большой делитель
+     самый большой делитель
 
     :return:
     """
