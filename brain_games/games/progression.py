@@ -10,20 +10,20 @@ def get_logic_game():
     :return: game_logic, correct_answer
     """
     # random
-    n = random.randint(5, 10) # начало прогрессии
-    d = random.randint(1, 5) # шаг прогресс
-    t = random.randint(50, 100) # конец прогрессии
+    a1 = random.randint(1, 10)  # начало прогрессии
+    d = random.randint(1, 5)  # шаг прогрессии
+    n = random.randint(5, 10)  # длина прогрессии
+    progress = []
+    i = 1
+    while i < n + 1:
+        an = a1 + (i - 1) * d
+        i = i + 1
+        progress.append(an)  # добавляем в список членов прогрессии
 
-    l = [] # пустой список
-    i = 0
-
-    for i in range(n, t, d):
-        l.append(i) # добавляем в список членов прогрессии
-        x = random.randint(0, len(l) - 1) # случайное число с прогрессии
-
-    correct_answer = l[x]
-    l[x] = '..' # заменяем в списке случайное число по индексу
-    game_logic = l
+    x = random.randint(0, n) # случайное число с прогрессии
+    correct_answer = progress[x]
+    progress[x] = ".." # заменяем в списке случайное число по индексу
+    game_logic = progress
 
     # logic game
 
