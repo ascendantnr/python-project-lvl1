@@ -20,9 +20,9 @@ def get_logic_game():
         i = i + 1
         progress.append(an)  # добавляем в список членов прогрессии
 
-    x = random.randint(0, n) # случайное число с прогрессии
+    x = random.randint(0, n)  # случайное число с прогрессии
     correct_answer = progress[x]
-    progress[x] = ".." # заменяем в списке случайное число по индексу
+    progress[x] = ".."  # заменяем в списке случайное число по индексу
     game_logic = progress
 
     # logic game
