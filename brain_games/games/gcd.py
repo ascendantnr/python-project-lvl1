@@ -13,7 +13,7 @@ def get_logic_game():
     a = random.randint(1, 1000)
     b = random.randint(1, 1000)
 
-    game_logic = "{}  {}".format(a, b)
+    game_logic = "{} {}".format(a, b)
 
     # logic game
 
