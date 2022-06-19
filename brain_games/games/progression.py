@@ -20,14 +20,12 @@ def get_logic_game():
         i = i + 1
         progress.append(an)  # добавляем в список членов прогрессии
 
-    x = random.randint(0, n - 1) # случайное число с прогрессии
+    x = random.randint(0, n - 1)  # случайное число с прогрессии
     correct_answer = progress[x]
 
     copy_progress = progress
     copy_progress[x] = ".."
-    list_to_str = " ".join(map(str, copy_progress)) # перевод листа в строку
+    list_to_str = " ".join(map(str, copy_progress))  # перевод листа в строку
     game_logic = list_to_str
-
-    # logic game
 
     return game_logic, str(correct_answer)
