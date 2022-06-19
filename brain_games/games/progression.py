@@ -20,7 +20,7 @@ def get_logic_game():
         i = i + 1
         progress.append(an)  # добавляем в список членов прогрессии
 
-    x = random.randint(0, n-1)
+    x = random.randint(0, n - 1)
     correct_answer = progress[x]
 
     copy_progress = progress
