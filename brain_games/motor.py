@@ -18,7 +18,7 @@ def motor(game):
     while krug < 3:
         # получить логику игры и правильный ответ
         game_logic, correct_answer = game.get_logic_game()
-        print("Question: ", game_logic)
+        print("Question:", game_logic)
         answer = prompt.string('Your answer: ')
         if answer == correct_answer:
             print("Correct!")
