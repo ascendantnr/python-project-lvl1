@@ -15,4 +15,4 @@ def get_logic_game():
     else:
         correct_answer = 'no'
 
-    return game_logic, correct_answer
+    return game_logic, str(correct_answer)
